@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WebApplication1.Models.Product>?
+@{
+    ViewData["Title"] = "Productos";
+}
+
+<h1>Productos</h1>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay productos para mostrar.</p>
+}
+else
+{
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img src="@item.Image" class="card-img-top" alt="@item.Title" />
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Title</h5>
+                        <p class="card-text">@item.Description</p>
+                        <p class="card-text"><strong>@item.Price.ToString("C")</strong></p>
+                        @if (item.Rating != null)
+                        {
+                            <p class="card-text">Rating: @item.Rating.Rate (@item.Rating.Count)</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

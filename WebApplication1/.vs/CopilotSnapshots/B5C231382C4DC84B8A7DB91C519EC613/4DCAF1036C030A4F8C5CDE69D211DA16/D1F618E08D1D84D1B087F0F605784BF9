@@ -1,0 +1,33 @@
+﻿@model List<WebApplication1.Models.Product>
+@{
+    ViewData["Title"] = "Productos";
+}
+
+<div class="container-fluid text-center">
+    <h1>Lista de Productos</h1>
+    <div class="d-flex flex-wrap justify-content-center">
+
+
+    @if (Model == null || !Model.Any())
+    {
+        <p>No hay productos para mostrar.</p>
+    }
+    else
+    {
+        <div class="d-flex flex-wrap justify-content-center">
+            @foreach (var product in Model)
+            {
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="@product.Image" class="card-img-top" alt="@product.Title" style="height:200px; object-fit:cover;" />
+                    <div class="card-body text-start">
+                        <h5 class="card-title">@product.Title</h5>
+                        <p class="card-text text-truncate" style="max-height:3.6rem; overflow:hidden;">@product.Description</p>
+                        <p class="card-text"><strong>@product.Price.ToString("C")</strong></p>
+                        <p class="card-text">Stock: @(product.Rating?.Count ?? 0)</p>
+                        <a class="btn btn-sm btn-primary" href="/Product/Details/@product.Id">Ver</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

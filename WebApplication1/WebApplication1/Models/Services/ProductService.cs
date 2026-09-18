@@ -1,0 +1,32 @@
+﻿using System.Collections.Generic;
+using System.Net.Http;
+using Newtonsoft.Json;
+using System.Threading.Tasks;
+using WebApplication1.Models;
+
+namespace WebApplication1.Models.Services
+{
+    public class ProductService
+    {
+        private readonly HttpClient _httpClient;
+
+        public ProductService(HttpClient httpClient)
+        {
+            _httpClient = httpClient;
+        }
+
+        public async Task<List<Product>> GetProducts()
+        {
+            var response = await _httpClient.GetStringAsync("https://fakestoreapi.com/products");
+            var products = JsonConvert.DeserializeObject<List<Product>>(response);
+            return products ?? new List<Product>();
+        }
+
+        public async Task<Product?> GetProductAsync(int productId)
+        {
+            var response = await _httpClient.GetStringAsync($"https://fakestoreapi.com/products/{productId}");
+            return JsonConvert.DeserializeObject<Product>(response);
+        }
+    }
+}
+ 

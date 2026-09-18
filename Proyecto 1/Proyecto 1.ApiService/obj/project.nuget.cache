@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "dgSpecHash": "QYRBYsn5CHk=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.AspNetCore.OpenApi. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "filePath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "libraryId": "Microsoft.AspNetCore.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete OpenTelemetry.Instrumentation.AspNetCore. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "filePath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "libraryId": "OpenTelemetry.Instrumentation.AspNetCore",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete OpenTelemetry.Exporter.OpenTelemetryProtocol. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "filePath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "libraryId": "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete OpenTelemetry.Instrumentation.Runtime. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "filePath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "libraryId": "OpenTelemetry.Instrumentation.Runtime",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.Extensions.Http.Resilience. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "filePath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "libraryId": "Microsoft.Extensions.Http.Resilience",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.Extensions.ServiceDiscovery. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "filePath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "libraryId": "Microsoft.Extensions.ServiceDiscovery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete OpenTelemetry.Extensions.Hosting. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "filePath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "libraryId": "OpenTelemetry.Extensions.Hosting",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete OpenTelemetry.Instrumentation.Http. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "filePath": "C:\\Users\\Det-Pc\\source\\repos\\Proyecto 1\\Proyecto 1.ApiService\\Proyecto 1.ApiService.csproj",
+      "libraryId": "OpenTelemetry.Instrumentation.Http",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

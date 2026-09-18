@@ -1,0 +1,8 @@
+﻿@model WebApplication1.Models.Product
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="container-fluid text-center">
+    <h1>@Model.Title</h1>
+</div>

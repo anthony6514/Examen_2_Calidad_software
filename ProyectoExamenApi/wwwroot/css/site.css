@@ -1,0 +1,60 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #f5f7fb;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.card {
+  border: 1px solid #dee2e6;
+}
+
+.card-img-top {
+  background-color: #f0f1f4;
+}
+
+.card-title {
+  min-height: 48px;
+}
+
+.card-text {
+  overflow-wrap: anywhere;
+}
+
+.details-image {
+  max-height: 620px;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 575px) {
+  .display-4 {
+    font-size: 2.2rem;
+  }
+}

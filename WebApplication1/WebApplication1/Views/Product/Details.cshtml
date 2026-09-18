@@ -1,0 +1,25 @@
+@model Product
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="container-fluid text-center">
+    <h1>@Model.Title</h1>
+
+    <div class="row justify-content-evenly mt-4">
+        <div class="col-4">
+            <img src="@Model.Image" alt="@Model.Title" class="img-fluid" />
+        </div>
+
+        <div class="col-4 text-start">
+            <p class="text-muted">@Model.Category</p>
+            <p>@Model.Description</p>
+            <h4 class="mt-3">@Model.Price.ToString("C")</h4>
+            @if (Model.Rating != null)
+            {
+                <p class="text-muted">Rating: @Model.Rating.Rate (@Model.Rating.Count)</p>
+            }
+            <a class="btn btn-primary mt-3" asp-controller="Product" asp-action="Index">Volver</a>
+        </div>
+    </div>
+</div>

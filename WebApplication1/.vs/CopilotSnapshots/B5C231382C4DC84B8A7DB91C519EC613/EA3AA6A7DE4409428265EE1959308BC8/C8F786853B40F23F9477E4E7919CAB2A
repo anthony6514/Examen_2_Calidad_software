@@ -1,0 +1,20 @@
+﻿@model WebApplication1.Models.Product
+@{
+    ViewData["Title"] = Model?.Title ?? "Producto";
+}
+
+<h1>@Model.Title</h1>
+
+<div class="container-fluid text-center">
+    <div class="col-md-4">
+        <img src="@Model.Image" class="img-fluid" alt="@Model.Title" />
+    </div>
+    <div class="col-md-8">
+        <p>@Model.Description</p>
+        <p><strong>@Model.Price.ToString("C")</strong></p>
+        @if (Model.Rating != null)
+        {
+            <p>Rating: @Model.Rating.Rate (@Model.Rating.Count)</p>
+        }
+    </div>
+</div>

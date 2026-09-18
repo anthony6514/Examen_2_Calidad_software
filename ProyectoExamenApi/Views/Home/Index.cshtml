@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center mb-5">
+    <h1 class="display-4">Blue-Eyes Cards</h1>
+    <p class="lead">Consulta cartas relacionadas con el Dragon Blanco de Ojos Azules.</p>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h2 class="h4">Catálogo de cartas</h2>
+                <p>La información se obtiene desde la API pública de Yu-Gi-Oh! y se muestra en páginas.</p>
+                <ul>
+                    <li>Imagen principal y nombre</li>
+                    <li>Precios disponibles</li>
+                    <li>Detalles y atributos</li>
+                </ul>
+                <a class="btn btn-primary" asp-controller="Card" asp-action="Index">Ver cartas</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+            <div class="card-body">
+                <h2 class="h4">¿Qué puedes revisar?</h2>
+                <p>Selecciona una carta para consultar sus imágenes, tipo, descripción, estadísticas y precios.</p>
+                <p class="mb-0 text-muted">Proyecto realizado con ASP.NET Core MVC.</p>
+            </div>
+        </div>
+    </div>
+</div>

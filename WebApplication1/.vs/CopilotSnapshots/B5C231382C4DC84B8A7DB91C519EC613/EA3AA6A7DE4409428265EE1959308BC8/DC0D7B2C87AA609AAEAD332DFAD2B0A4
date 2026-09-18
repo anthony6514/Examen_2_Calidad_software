@@ -1,0 +1,8 @@
+﻿namespace WebApplication1.Models.Services
+{
+    public class ProductService
+    {
+        private  HttpClient _httpClient;
+    }
+}
+ 

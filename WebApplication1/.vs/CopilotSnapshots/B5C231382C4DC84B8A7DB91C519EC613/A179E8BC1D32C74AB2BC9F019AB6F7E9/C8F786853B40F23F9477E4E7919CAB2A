@@ -1,0 +1,39 @@
+﻿@model List<WebApplication1.Models.Product>
+@{
+    ViewData["Title"] = "Productos";
+}
+
+<div class="container-fluid text-center">
+    <h1>Lista de Productos</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Stock</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Title</td>
+                        <td>@item.Description</td>
+                        <td>@item.Price.ToString("C")</td>
+                        <td>@(item.Rating?.Count ?? 0)</td>
+                        <td>
+                            <a class="btn btn-sm btn-primary" href="/Product/Details/@item.Id">Ver</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

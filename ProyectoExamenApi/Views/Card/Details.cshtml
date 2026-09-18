@@ -1,0 +1,59 @@
+@model ProyectoExamenApi.Models.YuGiOhCard
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="container-fluid text-center">
+    <h1>@Model.Name</h1>
+
+    <div class="row justify-content-evenly mt-4">
+        <div class="col-md-5">
+            <div id="cardImages" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    @for (var index = 0; index < Model.Images.Count; index++)
+                    {
+                        var image = Model.Images[index];
+                        <div class="carousel-item @(index == 0 ? "active" : "")">
+                            <img src="@image.ImageUrl" alt="@Model.Name" class="img-fluid details-image" />
+                        </div>
+                    }
+                </div>
+                @if (Model.Images.Count > 1)
+                {
+                    <button class="carousel-control-prev" type="button" data-bs-target="#cardImages" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#cardImages" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                }
+            </div>
+        </div>
+
+        <div class="col-md-5 text-start">
+            <p class="text-muted">@Model.Type | @Model.Race</p>
+            <p>@Model.Description</p>
+            <dl class="row">
+                <dt class="col-sm-5">Atributo</dt><dd class="col-sm-7">@(Model.Attribute ?? "No disponible")</dd>
+                <dt class="col-sm-5">Arquetipo</dt><dd class="col-sm-7">@(Model.Archetype ?? "No disponible")</dd>
+                <dt class="col-sm-5">Ataque</dt><dd class="col-sm-7">@(Model.Attack?.ToString() ?? "No disponible")</dd>
+                <dt class="col-sm-5">Defensa</dt><dd class="col-sm-7">@(Model.Defense?.ToString() ?? "No disponible")</dd>
+                <dt class="col-sm-5">Nivel</dt><dd class="col-sm-7">@(Model.Level?.ToString() ?? "No disponible")</dd>
+            </dl>
+
+            <h4 class="mt-4">Precios</h4>
+            @if (Model.MainPrice is not null)
+            {
+                <ul>
+                    <li>TCGPlayer: @Model.MainPrice.Tcgplayer</li>
+                    <li>Cardmarket: @Model.MainPrice.Cardmarket</li>
+                    <li>eBay: @Model.MainPrice.Ebay</li>
+                    <li>Amazon: @Model.MainPrice.Amazon</li>
+                </ul>
+            }
+            <a class="btn btn-primary mt-3" asp-controller="Card" asp-action="Index">Volver</a>
+        </div>
+    </div>
+</div>

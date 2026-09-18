@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "vD1Wwa7X5Jw=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Det-Pc\\source\\repos\\Autonoma\\Autonoma\\Autonoma.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "No se encuentra el paquete Microsoft.AspNetCore.OpenApi. No existe ningún paquete con este id. en los orígenes: Microsoft Visual Studio Offline Packages",
+      "projectPath": "C:\\Users\\Det-Pc\\source\\repos\\Autonoma\\Autonoma\\Autonoma.csproj",
+      "filePath": "C:\\Users\\Det-Pc\\source\\repos\\Autonoma\\Autonoma\\Autonoma.csproj",
+      "libraryId": "Microsoft.AspNetCore.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

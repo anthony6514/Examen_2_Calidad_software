@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Proyecto 1.ApiService/Proyecto 1.ApiService.csproj" />
+  <Project Path="Proyecto 1.ServiceDefaults/Proyecto 1.ServiceDefaults.csproj" />
+  <Project Path="Proyecto 1.Web/Proyecto 1.Web.csproj" />
+</Solution>
